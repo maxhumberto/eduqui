@@ -9,21 +9,23 @@ export default function StartScreen({ navigation }) {
   return (
     <Background>
       <Logo />
-      <Header>Login Template</Header>
       <Paragraph>
-        The easiest way to start with your amazing application.
       </Paragraph>
+      <Header> Bem-Vindo! </Header>
+
       <Button
         mode="contained"
         onPress={() => navigation.navigate('LoginScreen')}
       >
         Login
       </Button>
+      .
+      
       <Button
-        mode="outlined"
+        mode="contained"
         onPress={() => navigation.navigate('RegisterScreen')}
       >
-        Sign Up
+        Registrar-se 
       </Button>
     </Background>
   )

@@ -1,4 +1,5 @@
 import React from 'react'
+import { } from 'react-native';
 import Background from '../components/Background'
 import Logo from '../components/Logo'
 import Header from '../components/Header'
@@ -9,21 +10,17 @@ export default function Dashboard({ navigation }) {
   return (
     <Background>
       <Logo />
-      <Header>Let’s start</Header>
+      <Header>vamos começar</Header>
       <Paragraph>
-        Your amazing app starts here. Open you favorite code editor and start
-        editing this project.
+        Login bem sucedido, bons estudos!
       </Paragraph>
+
+      
       <Button
-        mode="outlined"
-        onPress={() =>
-          navigation.reset({
-            index: 0,
-            routes: [{ name: 'StartScreen' }],
-          })
-        }
+        mode="contained"
+        onPress={() => navigation.navigate('Home')}
       >
-        Logout
+        OK
       </Button>
     </Background>
   )
