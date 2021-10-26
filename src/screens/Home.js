@@ -23,11 +23,90 @@ const Heading = (props) => <Text style={styles.heading}>{props.children}</Text>
 
 const Title = (props) => <Text style={styles.title}>{props.children}</Text>
 
-const Card = (props) => (
+const Card1 = (props) => (
   <View style={CardStyles.card}>
-    <Avatar url={props.avatar} />
+    <Avatar url={'https://cdn-icons.flaticon.com/png/512/4645/premium/4645370.png?token=exp=1634336307~hmac=f2c065ead72deb837e2152b07b3cd2ae'} />
     <View style={{ textAlign: 'center', marginTop: 7 }}>
-      <Title>{props.name}</Title>
+      <Title>Matemática</Title>
+    </View>
+  </View>
+)
+
+const Card2 = (props) => (
+  <View style={CardStyles.card}>
+    <Avatar url={'https://cdn-icons.flaticon.com/png/512/4645/premium/4645348.png?token=exp=1634336290~hmac=7be17c6bfe67eab93ce13d2e4f676fb4'} />
+    <View style={{ textAlign: 'center', marginTop: 7 }}>
+      <Title>Português</Title>
+    </View>
+  </View>
+)
+
+const Card3 = (props) => (
+  <View style={CardStyles.card}>
+    <Avatar url={'https://cdn-icons.flaticon.com/png/512/4645/premium/4645270.png?token=exp=1634336135~hmac=cfecf956af3ba6da98f340157e1a56ff'} />
+    <View style={{ textAlign: 'center', marginTop: 7 }}>
+      <Title>Física</Title>
+    </View>
+  </View>
+)
+const Card4 = (props) => (
+  <View style={CardStyles.card}>
+    <Avatar url={'https://cdn-icons.flaticon.com/png/512/4645/premium/4645266.png?token=exp=1634336290~hmac=7bdca2984ab04985ec460827e838bda1'} />
+    <View style={{ textAlign: 'center', marginTop: 7 }}>
+      <Title>Química</Title>
+    </View>
+  </View>
+)
+const Card5 = (props) => (
+  <View style={CardStyles.card}>
+    <Avatar url={'https://cdn-icons.flaticon.com/png/512/4645/premium/4645272.png?token=exp=1634336290~hmac=7ca914f0978e9221bb7b93f5d9e2b5f8'} />
+    <View style={{ textAlign: 'center', marginTop: 7 }}>
+      <Title>Biologia</Title>
+    </View>
+  </View>
+)
+
+const Card6 = (props) => (
+  <View style={CardStyles.card}>
+    <Avatar url={'https://cdn-icons.flaticon.com/png/512/4645/premium/4645308.png?token=exp=1634336290~hmac=5e6f604bfcb117538269f61e242d5ff7'} />
+    <View style={{ textAlign: 'center', marginTop: 7 }}>
+      <Title>Geografia</Title>
+    </View>
+  </View>
+)
+
+const Card7 = (props) => (
+  <View style={CardStyles.card}>
+    <Avatar url={'https://cdn-icons.flaticon.com/png/512/4645/premium/4645364.png?token=exp=1634336307~hmac=2f64e4e88e179a6f376938ebd1d098f3'} />
+    <View style={{ textAlign: 'center', marginTop: 7 }}>
+      <Title>História</Title>
+    </View>
+  </View>
+)
+
+const Card8 = (props) => (
+  <View style={CardStyles.card}>
+    <Avatar url={'https://cdn-icons.flaticon.com/png/512/4645/premium/4645261.png?token=exp=1634336290~hmac=28a17c12ba6ad10f755b5ba3417ef123'} />
+    <View style={{ textAlign: 'center', marginTop: 7 }}>
+      <Title>Redação</Title>
+    </View>
+  </View>
+)
+
+const Card9 = (props) => (
+  <View style={CardStyles.card}>
+    <Avatar url={'https://cdn-icons-png.flaticon.com/512/3106/3106381.png'} />
+    <View style={{ textAlign: 'center', marginTop: 7 }}>
+      <Title>Inglês</Title>
+    </View>
+  </View>
+)
+
+const Card10 = (props) => (
+  <View style={CardStyles.card}>
+    <Avatar url={'https://cdn-icons-png.flaticon.com/512/2122/2122673.png'} />
+    <View style={{ textAlign: 'center', marginTop: 7 }}>
+      <Title>Espanhol</Title>
     </View>
   </View>
 )
@@ -273,7 +352,16 @@ const HomeScreen = () => (
     <Heading>Materias</Heading>
     <ScrollView>
       <ScrollView style={{ flex: 1, flexDirection: 'row' }} horizontal>
-
+        <Card1/>
+        <Card2/>
+        <Card3/>
+        <Card4/>
+        <Card5/>
+        <Card6/>
+        <Card7/>
+        <Card8/>
+        <Card9/>
+        <Card10/>
       </ScrollView>
       <Heading>Materias</Heading>
       <Post1/>
