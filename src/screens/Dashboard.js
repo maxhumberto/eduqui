@@ -18,7 +18,7 @@ export default function Dashboard({ navigation }) {
       
       <Button
         mode="contained"
-        onPress={() => navigation.navigate('Home')}
+        onPress={() => navigation.navigate('Principal')}
       >
         OK
       </Button>

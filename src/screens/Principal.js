@@ -44,12 +44,12 @@ export default function Principal() {
                 }}
                 />
                  <Tab.Screen
-                    name= "Perfil"
+                    name= "Forum"
                     component={Perfil}
                     options={{
-                    tabBarLabel:'Perfil',
+                    tabBarLabel:'Forum',
                     tabBarIcon:({color, size}) => (
-                     <MaterialCommunityIcons name ="person" color={color} size = {size} />          
+                     <MaterialCommunityIcons name ="comment" color={color} size = {size} />          
                     ),
                 }}
                 />

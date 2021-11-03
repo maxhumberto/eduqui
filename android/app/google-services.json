@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "318385993526",
+    "project_id": "eduqui-43a14",
+    "storage_bucket": "eduqui-43a14.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:318385993526:android:f172bdf62da99a783ae597",
+        "android_client_info": {
+          "package_name": "com.yourcompany.eduqui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "318385993526-6dr0eajvprkta7ioqgadvnua9nun8l56.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yourcompany.eduqui",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "318385993526-1gk1n9hau933c4lmr8082a5hva8a7jhh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG1VKJS2t0yT95ADqLq7CZl9SDuLvev8c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "318385993526-1gk1n9hau933c4lmr8082a5hva8a7jhh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

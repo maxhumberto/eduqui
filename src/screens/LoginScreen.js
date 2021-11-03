@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { TouchableOpacity, StyleSheet, View } from 'react-native'
+import { TouchableOpacity, StyleSheet, View, StatusBar, } from 'react-native'
 import { Text } from 'react-native-paper'
 import Background from '../components/Background'
 import Logo from '../components/Logo'
@@ -10,6 +10,7 @@ import BackButton from '../components/BackButton'
 import { theme } from '../core/theme'
 import { emailValidator } from '../helpers/emailValidator'
 import { passwordValidator } from '../helpers/passwordValidator'
+import { Icon } from 'react-native-elements';
 
 export default function LoginScreen({ navigation }) {
   const [email, setEmail] = useState({ value: '', error: '' })
@@ -62,6 +63,22 @@ export default function LoginScreen({ navigation }) {
           <Text style={styles.forgot}>Esqueceu sua senha?</Text>
         </TouchableOpacity>
       </View>
+      <View style={styles.loginWithBar}>
+          <TouchableOpacity style={styles.iconButton} >
+         
+            <Icon name='google' type='font-awesome' size={30} color='#808e9b' />  <Text style={styles.ligacao}>
+             Entre com a conta do Google. </Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.iconButton}>
+            <Icon
+              name='facebook-square'
+              type='font-awesome'
+              size={30}
+              color='#808e9b'
+            />   <Text style={styles.ligacao}> Entre com a conta do Facebook. </Text>
+          </TouchableOpacity>
+
+          </View>
       <Button mode="contained" onPress={onLoginPressed}>
         Login
       </Button>
@@ -93,4 +110,24 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: theme.colors.secondary,
   },
+  ligacao: {
+    fontSize: 13,
+    fontWeight: 'bold',
+    color: '#FFFFFF',
+    justifyContent: 'center'
+  },
+  iconButton: {
+    backgroundColor: '#cc3399',
+    padding: 10,
+    marginHorizontal: 10,
+    borderRadius: 50,
+  },
+  loginWithBar: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    marginTop: 30,
+  },
+
 })
+
